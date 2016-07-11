@@ -1,0 +1,9 @@
+<div>
+  <h1>{{title}}</h1>
+  <h2>SpringData + SpringBoot + AngularJS 2 + TypeScript</h2>
+  <button md-raised-button
+          (click)="getModels()">Call backend</button>
+  <ul>
+    <li *ngFor="#model of data">{{model | json}}</li>
+  </ul>
+</div>
